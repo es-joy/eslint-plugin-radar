@@ -1,0 +1,2 @@
+tests/resources
+!**/node_modules/**

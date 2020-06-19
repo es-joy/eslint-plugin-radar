@@ -1,2 +1,4 @@
 tests/resources
-!**/node_modules/**
+ruling/javascript-test-sources
+lib
+!.*.js

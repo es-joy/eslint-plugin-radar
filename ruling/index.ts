@@ -48,6 +48,7 @@ function run() {
 
   const cli = new CLIEngine({
     parser: "babel-eslint",
+    ignorePath: path.join(__dirname, ".eslintignore"),
     parserOptions: {
       ecmaFeatures: { jsx: true, experimentalObjectRestSpread: true },
       ecmaVersion: 2018,

@@ -23,7 +23,7 @@
     "test": "jest",
     "ruling": "ts-node ruling/index.ts",
     "typecheck": "tsc -p tsconfig.json",
-    "lint": "eslint --ext js,ts src tests ruling/index.ts",
+    "lint": "eslint --ext js,ts .",
     "precommit": "lint-staged && yarn typecheck",
     "prepack": "yarn build"
   },
