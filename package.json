@@ -23,7 +23,10 @@
     "test": "jest",
     "ruling": "ts-node ruling/index.ts",
     "typecheck": "tsc -p tsconfig.json",
-    "lint": "eslint --ext js,ts .",
+    "coverage": "yarn test --coverage",
+    "eslint": "eslint --ext js,ts .",
+    "prettier": "prettier --list-different \"{src,tests}/**/*.{js,ts}\"",
+    "lint": "yarn eslint && yarn prettier",
     "precommit": "lint-staged && yarn typecheck",
     "prepack": "yarn build"
   },
