@@ -26,6 +26,12 @@ import { isReturnStatement, isBlockStatement, isBooleanLiteral, isIfStatement, g
 const rule: Rule.RuleModule = {
   meta: {
     type: "suggestion",
+    docs: {
+      description: 'Return of boolean expressions should not be wrapped into an "if-then-else" statement',
+      category: "Code Smell Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/prefer-single-boolean-return.md",
+    },
   },
   create(context: Rule.RuleContext) {
     return {

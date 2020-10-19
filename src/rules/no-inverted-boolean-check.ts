@@ -38,8 +38,14 @@ const invertedOperators: { [operator: string]: string } = {
 
 const rule: Rule.RuleModule = {
   meta: {
-    fixable: "code",
     type: "suggestion",
+    docs: {
+      description: "Boolean checks should not be inverted",
+      category: "Code Smell Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/no-inverted-boolean-check.md",
+    },
+    fixable: "code",
   },
   create(context: Rule.RuleContext) {
     return { UnaryExpression: (node: Node) => visitUnaryExpression(node as UnaryExpression, context) };

@@ -38,6 +38,12 @@ const MESSAGE =
 const rule: Rule.RuleModule = {
   meta: {
     type: "suggestion",
+    docs: {
+      description: "Object literal syntax should be used",
+      category: "Code Smell Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/prefer-object-literal.md",
+    },
   },
   create(context: Rule.RuleContext) {
     return {

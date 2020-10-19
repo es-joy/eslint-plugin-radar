@@ -31,6 +31,12 @@ const message = (line: string) =>
 const rule: Rule.RuleModule = {
   meta: {
     type: "problem",
+    docs: {
+      description: "Functions should not have identical implementations",
+      category: "Code Smell Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/no-identical-functions.md",
+    },
     schema: [
       {
         enum: ["radar-runtime"],

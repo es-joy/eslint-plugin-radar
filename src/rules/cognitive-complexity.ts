@@ -45,6 +45,12 @@ type OptionalLocation = estree.SourceLocation | null | undefined;
 const rule: Rule.RuleModule = {
   meta: {
     type: "suggestion",
+    docs: {
+      description: "Cognitive Complexity of functions should not be too high",
+      category: "Code Smell Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/cognitive-complexity.md",
+    },
     schema: [
       { type: "integer", minimum: 0 },
       {

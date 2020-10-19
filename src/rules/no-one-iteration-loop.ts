@@ -26,6 +26,12 @@ import { isContinueStatement, getParent } from "../utils/nodes";
 const rule: Rule.RuleModule = {
   meta: {
     type: "problem",
+    docs: {
+      description: "Loops with at most one iteration should be refactored",
+      category: "Bug Detection",
+      recommended: true,
+      url: "https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/no-one-iteration-loop.md",
+    },
   },
   create(context: Rule.RuleContext) {
     const loopingNodes: Set<Node> = new Set();
