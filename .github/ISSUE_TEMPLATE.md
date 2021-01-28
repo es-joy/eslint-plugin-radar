@@ -25,7 +25,7 @@ console.log("Hello, world"); // False-positive here
 
 <!------------------------->
 
-**eslint-plugin-sonarjs version:** <!-- version of eslint-plugin-sonarjs where you have a bug --><br>
+**eslint-plugin-radar version:** <!-- version of eslint-plugin-radar where you have a bug --><br>
 **eslint version:** <!-- version of eslint in your environment --><br>
 **Node.js version:** <!-- version of Node.js in your environment --><br>
 

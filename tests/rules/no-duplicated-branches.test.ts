@@ -123,7 +123,7 @@ ruleTester.run("no-duplicated-branches if", rule, {
         first();
         second();
       }`,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         {
           line: 5,
@@ -282,7 +282,7 @@ ruleTester.run("no-duplicated-branches switch", rule, {
           second();
           break;
       }`,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         {
           line: 7,

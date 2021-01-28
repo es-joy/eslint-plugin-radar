@@ -20,14 +20,14 @@
 "use strict";
 module.exports = {
   env: { es6: true, node: true, jest: true },
-  extends: ["eslint:recommended", "plugin:import/errors", "prettier", "plugin:sonarjs/recommended"],
+  extends: ["eslint:recommended", "plugin:import/errors", "prettier", "plugin:radar/recommended"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: { modules: true },
     sourceType: "module",
   },
-  plugins: ["import", "notice", "sonarjs"],
+  plugins: ["import", "notice", "radar"],
   rules: {
     // possible errors
     "for-direction": "error",
@@ -143,7 +143,7 @@ module.exports = {
     // notice
     "notice/notice": ["error", { templateFile: "scripts/file-header.ts" }],
 
-    // sonarjs
-    "sonarjs/cognitive-complexity": "warn",
+    // radar
+    "radar/cognitive-complexity": "warn",
   },
 };

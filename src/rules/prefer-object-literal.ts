@@ -56,7 +56,7 @@ function checkObjectInitialization(statements: Statement[], context: Rule.RuleCo
   let index = 0;
   while (index < statements.length - 1) {
     const objectDeclaration = getObjectDeclaration(statements[index]);
-    // eslint-disable-next-line sonarjs/no-collapsible-if
+    // eslint-disable-next-line radar/no-collapsible-if
     if (objectDeclaration && isIdentifier(objectDeclaration.id)) {
       if (isPropertyAssignment(statements[index + 1], objectDeclaration.id, context.getSourceCode())) {
         context.report({ message: MESSAGE, node: objectDeclaration });

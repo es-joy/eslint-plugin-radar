@@ -54,7 +54,7 @@ const rule: Rule.RuleModule = {
     schema: [
       {
         // internal parameter
-        enum: ["sonar-runtime"],
+        enum: ["radar-runtime"],
       },
     ],
   },
@@ -82,15 +82,15 @@ const rule: Rule.RuleModule = {
           context,
           {
             message: message(expr.operator),
-            node: isSonarRuntime() ? expr.right : expr,
+            node: isRadarRuntime() ? expr.right : expr,
           },
           secondaryLocations,
         );
       }
     }
 
-    function isSonarRuntime() {
-      return context.options[context.options.length - 1] === "sonar-runtime";
+    function isRadarRuntime() {
+      return context.options[context.options.length - 1] === "radar-runtime";
     }
   },
 };

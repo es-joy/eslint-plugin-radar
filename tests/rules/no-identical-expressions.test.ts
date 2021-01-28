@@ -63,7 +63,7 @@ ruleTester.run("no-identical-expressions", rule, {
     {
       code: `a == b || a == b
       //     ^^^^^^>   ^^^^^^`,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         {
           message: JSON.stringify({

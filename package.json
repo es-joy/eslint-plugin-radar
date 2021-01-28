@@ -1,20 +1,21 @@
 {
-  "name": "eslint-plugin-sonarjs",
+  "name": "eslint-plugin-radar",
   "version": "0.5.0",
-  "description": "SonarJS rules for ESLint",
+  "description": "Radar rules for ESLint",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "https://github.com/SonarSource/eslint-plugin-sonarjs",
+  "repository": "https://github.com/es-joy/eslint-plugin-radar",
   "license": "LGPL-3.0",
   "keywords": [
+    "radar",
     "sonarjs",
     "eslint",
     "eslintplugin"
   ],
   "bugs": {
-    "url": "https://github.com/SonarSource/eslint-plugin-sonarjs/issues"
+    "url": "https://github.com/es-joy/eslint-plugin-radar/issues"
   },
-  "homepage": "https://github.com/SonarSource/eslint-plugin-sonarjs",
+  "homepage": "https://github.com/es-joy/eslint-plugin-radar",
   "engines": {
     "node": ">=10"
   },
@@ -47,7 +48,7 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-notice": "0.9.10",
-    "eslint-plugin-sonarjs": "file:.",
+    "eslint-plugin-radar": "file:.",
     "jest": "26.6.3",
     "lint-staged": "10.5.3",
     "lodash": "4.17.20",

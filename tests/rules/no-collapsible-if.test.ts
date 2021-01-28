@@ -66,7 +66,7 @@ ruleTester.run("no-collapsible-if", rule, {
         if (y) {}
       //^^ {{Nested "if" statement.}}
       }`,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         {
           message: JSON.stringify({

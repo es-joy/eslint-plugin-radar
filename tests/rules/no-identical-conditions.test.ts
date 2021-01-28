@@ -48,7 +48,7 @@ ruleTester.run("no-identical-conditions", rule, {
         else if (a) {}
         //       ^
       `,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         JSON.stringify({
           secondaryLocations: [

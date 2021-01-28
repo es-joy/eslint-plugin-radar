@@ -111,7 +111,7 @@ ruleTester.run("no-element-overwrite", rule, {
     //^^^^^^^^^^^^^^^^^^^^>
       fruits[1] = "apple";
     //^^^^^^^^^^^^^^^^^^^`,
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
       errors: [
         JSON.stringify({
           secondaryLocations: [{ line: 2, column: 6, endLine: 2, endColumn: 26, message: "Original value" }],

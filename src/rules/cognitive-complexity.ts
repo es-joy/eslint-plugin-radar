@@ -49,7 +49,7 @@ const rule: Rule.RuleModule = {
       { type: "integer", minimum: 0 },
       {
         // internal parameter
-        enum: ["sonar-runtime", "metric"],
+        enum: ["radar-runtime", "metric"],
       },
     ],
   },

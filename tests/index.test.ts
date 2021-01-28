@@ -26,7 +26,7 @@ const existingRules = fs.readdirSync(rulesPath).map((file) => file.substring(0, 
 
 it("should declare all rules in recommended config", () => {
   existingRules.forEach((rule) => {
-    expect(configs.recommended.rules).toHaveProperty(`sonarjs/${rule}`);
+    expect(configs.recommended.rules).toHaveProperty(`radar/${rule}`);
   });
   expect(Object.keys(configs.recommended.rules!)).toHaveLength(existingRules.length);
 });

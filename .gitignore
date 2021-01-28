@@ -26,9 +26,9 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# sonar-scanner
-.sonar
-.sonarlint
+# radar-scanner
+.radar
+.radarlint
 .scannerwork
 
 # generated

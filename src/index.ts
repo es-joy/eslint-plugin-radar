@@ -19,7 +19,7 @@
  */
 import { Linter } from "eslint";
 
-const sonarjsRules: [string, Linter.RuleLevel][] = [
+const radarRules: [string, Linter.RuleLevel][] = [
   ["cognitive-complexity", "error"],
   ["max-switch-cases", "error"],
   ["no-all-duplicated-branches", "error"],
@@ -47,13 +47,13 @@ const sonarjsRules: [string, Linter.RuleLevel][] = [
   ["prefer-while", "error"],
 ];
 
-const sonarjsRuleModules: any = {};
+const radarRuleModules: any = {};
 
 const configs: { recommended: Linter.Config & { plugins: string[] } } = {
-  recommended: { plugins: ["sonarjs"], rules: {} },
+  recommended: { plugins: ["radar"], rules: {} },
 };
 
-sonarjsRules.forEach((rule) => (sonarjsRuleModules[rule[0]] = require(`./rules/${rule[0]}`)));
-sonarjsRules.forEach((rule) => (configs.recommended.rules![`sonarjs/${rule[0]}`] = rule[1]));
+radarRules.forEach((rule) => (radarRuleModules[rule[0]] = require(`./rules/${rule[0]}`)));
+radarRules.forEach((rule) => (configs.recommended.rules![`radar/${rule[0]}`] = rule[1]));
 
-export { sonarjsRuleModules as rules, configs };
+export { radarRuleModules as rules, configs };

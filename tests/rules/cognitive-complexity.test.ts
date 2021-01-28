@@ -218,7 +218,7 @@ ruleTester.run("cognitive-complexity", rule, {
 
         return foo(a && b) && c; // +1 "&&", +1 "&&"
       }`,
-      options: [0, "sonar-runtime"],
+      options: [0, "radar-runtime"],
       errors: [
         JSON.stringify({
           secondaryLocations: [

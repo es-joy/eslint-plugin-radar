@@ -60,13 +60,13 @@ function addRule(line: string, type: string) {
     .substr(2)
     .split("([")[0]
     .trim();
-  const key = "sonarjs/" + line.split("`")[1].trim();
+  const key = "radar/" + line.split("`")[1].trim();
 
   meta.push({
     key,
     name,
     type,
-    description: `See description of ESLint rule <code>sonarjs/${key}</code> at the <a href="https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/${key}.md">eslint-plugin-sonarjs website</a>.`,
+    description: `See description of ESLint rule <code>radar/${key}</code> at the <a href="https://github.com/es-joy/eslint-plugin-radar/blob/master/docs/rules/${key}.md">eslint-plugin-radar website</a>.`,
   });
 }
 

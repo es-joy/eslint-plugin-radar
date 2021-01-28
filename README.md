@@ -1,6 +1,6 @@
-# eslint-plugin-sonarjs [![npm version](https://badge.fury.io/js/eslint-plugin-sonarjs.svg)](https://badge.fury.io/js/eslint-plugin-sonarjs) [![Build Status](https://travis-ci.org/SonarSource/eslint-plugin-sonarjs.svg?branch=master)](https://travis-ci.org/SonarSource/eslint-plugin-sonarjs) [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=eslint-plugin-sonarjs&metric=alert_status)](https://sonarcloud.io/dashboard?id=eslint-plugin-sonarjs) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eslint-plugin-sonarjs&metric=coverage)](https://sonarcloud.io/dashboard?id=eslint-plugin-sonarjs)
+# eslint-plugin-radar [![npm version](https://badge.fury.io/js/eslint-plugin-radar.svg)](https://badge.fury.io/js/eslint-plugin-radar) [![Build Status](https://travis-ci.org/es-joy/eslint-plugin-radar.svg?branch=master)](https://travis-ci.org/es-joy/eslint-plugin-radar) [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=eslint-plugin-radar&metric=alert_status)](https://sonarcloud.io/dashboard?id=eslint-plugin-radar) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eslint-plugin-radar&metric=coverage)](https://sonarcloud.io/dashboard?id=eslint-plugin-radar)
 
-SonarJS rules for ESLint to detect bugs and suspicious patterns in your code.
+Radar rules for ESLint to detect bugs and suspicious patterns in your code.
 
 ## Rules
 
@@ -72,26 +72,26 @@ Node.js (>=6.x).
 ## Usage
 
 * If you don't have ESLint yet configured for your project, follow [these instructions](https://github.com/eslint/eslint#installation-and-usage).
-* Install `eslint-plugin-sonarjs` using `npm` (or `yarn`) for you project or globally:
+* Install `eslint-plugin-radar` using `npm` (or `yarn`) for you project or globally:
 
 ```sh
-npm install eslint-plugin-sonarjs --save-dev # install for your project
-npm install eslint-plugin-sonarjs -g         # or install globally
+npm install eslint-plugin-radar --save-dev # install for your project
+npm install eslint-plugin-radar -g         # or install globally
 ```
 
-* Add `eslint-plugin-sonarjs` to the `plugins` option of your `.eslintrc`:
+* Add `eslint-plugin-radar` to the `plugins` option of your `.eslintrc`:
 
 ```json
 {
-  "plugins": ["sonarjs"]
+  "plugins": ["radar"]
 }
 ```
 
-* Add `plugin:sonarjs/recommended` to the `extends` option to enable all recommended rules:
+* Add `plugin:radar/recommended` to the `extends` option to enable all recommended rules:
 
 ```json
 {
-  "extends": ["plugin:sonarjs/recommended"]
+  "extends": ["plugin:radar/recommended"]
 }
 ```
 
@@ -100,8 +100,8 @@ npm install eslint-plugin-sonarjs -g         # or install globally
 ```javascript
 {
   "rules": {
-    "sonarjs/cognitive-complexity": "error",
-    "sonarjs/no-identical-expressions": "error"
+    "radar/cognitive-complexity": "error",
+    "radar/no-identical-expressions": "error"
     // etc.
   }
 }

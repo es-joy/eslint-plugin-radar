@@ -82,7 +82,7 @@ export type ReportDescriptor = Rule.ReportDescriptor & { message: string };
 /**
  * Wrapper for `context.report`, supporting secondary locations and cost.
  * Encode those extra information in the issue message when rule is executed
- * in Sonar* environment.
+ * in Radar* environment.
  */
 export function report(
   context: Rule.RuleContext,
@@ -91,7 +91,7 @@ export function report(
   cost?: number,
 ) {
   const { message } = reportDescriptor;
-  if (context.options[context.options.length - 1] === "sonar-runtime") {
+  if (context.options[context.options.length - 1] === "radar-runtime") {
     const encodedMessage: EncodedMessage = { secondaryLocations, message, cost };
     reportDescriptor.message = JSON.stringify(encodedMessage);
   }

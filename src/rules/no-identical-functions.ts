@@ -33,7 +33,7 @@ const rule: Rule.RuleModule = {
     type: "problem",
     schema: [
       {
-        enum: ["sonar-runtime"],
+        enum: ["radar-runtime"],
       },
     ],
   },

@@ -8,4 +8,4 @@ fi
 
 set -euo pipefail
 
-sonar-scanner
+radar-scanner

@@ -7,8 +7,8 @@ yarn-error.log*
 .eslintcache/
 *.tgz
 
-.sonar/
-.sonarlint/
+.radar/
+.radarlint/
 .scannerwork/
 
 .idea/
@@ -28,7 +28,7 @@ tests/
 .travis.yml
 .eslintrc.js
 .editorconfig
-sonar-project.properties
+radar-project.properties
 test-report.xml
 tsconfig.json
 tsconfig-src.json

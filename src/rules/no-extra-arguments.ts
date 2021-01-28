@@ -36,7 +36,7 @@ const rule: Rule.RuleModule = {
     schema: [
       {
         // internal parameter
-        enum: ["sonar-runtime"],
+        enum: ["radar-runtime"],
       },
     ],
   },
@@ -49,7 +49,7 @@ const rule: Rule.RuleModule = {
     const emptyFunctions: Set<estree.Node> = new Set();
 
     return {
-      // eslint-disable-next-line sonarjs/cognitive-complexity
+      // eslint-disable-next-line radar/cognitive-complexity
       CallExpression(node: estree.Node) {
         const callExpr = node as estree.SimpleCallExpression;
         if (isIdentifier(callExpr.callee)) {
@@ -131,17 +131,17 @@ const rule: Rule.RuleModule = {
       const paramLength = functionNode.params.length;
       const argsLength = callExpr.arguments.length;
       // prettier-ignore
-      const expectedArguments = 
+      const expectedArguments =
         // eslint-disable-next-line no-nested-ternary
-        paramLength === 0 ? "no arguments" : 
-        paramLength === 1 ? "1 argument" : 
+        paramLength === 0 ? "no arguments" :
+        paramLength === 1 ? "1 argument" :
         `${paramLength} arguments`;
 
       // prettier-ignore
-      const providedArguments = 
+      const providedArguments =
         // eslint-disable-next-line no-nested-ternary
-        argsLength === 0 ? "none was" : 
-        argsLength === 1 ? "1 was" : 
+        argsLength === 0 ? "none was" :
+        argsLength === 1 ? "1 was" :
         `${argsLength} were`;
 
       const message = `This function expects ${expectedArguments}, but ${providedArguments} provided.`;

@@ -98,7 +98,7 @@ ruleTester.run("no-extra-arguments", rule, {
       errors: [
         encodedMessage(2, 3, [{ line: 2, column: 21, endLine: 2, endColumn: 27, message: "Formal parameters" }]),
       ],
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
     },
     {
       code: `
@@ -121,7 +121,7 @@ ruleTester.run("no-extra-arguments", rule, {
       errors: [
         encodedMessage(0, 1, [{ line: 4, column: 18, endLine: 4, endColumn: 26, message: "Formal parameters" }]),
       ],
-      options: ["sonar-runtime"],
+      options: ["radar-runtime"],
     },
     {
       code: `
