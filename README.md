@@ -2,6 +2,9 @@
 
 Radar rules for ESLint to detect bugs and suspicious patterns in your code.
 
+This is a currently maintained fork of
+[SonarJS](https://github.com/SonarSource/eslint-plugin-sonarjs).
+
 ## Rules
 
 ### Bug Detection :bug:
