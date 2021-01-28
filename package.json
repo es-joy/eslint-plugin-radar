@@ -1,6 +1,8 @@
 {
   "name": "eslint-plugin-radar",
   "version": "0.5.0",
+  "author": "Brett Zamir",
+  "contributors": [],
   "description": "Radar rules for ESLint",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
