@@ -28,6 +28,7 @@ tests/
 .travis.yml
 .eslintrc.js
 .editorconfig
+.ncurc.js
 radar-project.properties
 test-report.xml
 tsconfig.json
