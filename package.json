@@ -7,7 +7,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/es-joy/eslint-plugin-radar",
-  "license": "LGPL-3.0",
+  "license": "LGPL-3.0-only",
   "keywords": [
     "radar",
     "sonarjs",

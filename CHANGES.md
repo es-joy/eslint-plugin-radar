@@ -1,9 +1,18 @@
 # CHANGES for `eslint-plugin-radar`
 
+## ?
+
+- License: Update license file name to reflect license type is specifically
+  LGPL-3.0-only
+- npm: Change `license` to non-deprecated SPDX identifier, `LGPL-3.0-only`
+  (until such time as may hear back on whether "-or-later" may have been
+  intended to be tacked on as well:
+  <https://github.com/SonarSource/eslint-plugin-sonarjs/issues/190>)
+
 ## 0.2.0
 
-- Enhancement: add 'meta.docs' (@Loxos)
-- License: Rename file name to reflect license type and add extension
+- Enhancement: add `meta.docs` (@Loxos)
+- License: Rename file name to reflect license type (LGPL-3) and add extension
 - Docs: Add `CHANGES.md`
 
 **Dev-focused:**
@@ -14,7 +23,6 @@
 
 - Forked from <https://github.com/SonarSource/eslint-plugin-sonarjs>
 - License: Add headers to hidden files
-- Optimization: Add "use strict" for CJS files
 - npm: Add ESLint 7 to peerDeps.
 - npm: Bump engines to avoid EOL versions (Node >=10)
 - npm: Use repository URL (accepted in npm, package.json linter doesn't
@@ -23,6 +31,7 @@
 
 **Dev-focused:**
 
+- Optimization: Add "use strict" for CJS eslint files
 - Linting: Apply latest `prettier` (adding `.prettierignore` to avoid applying
     to test sources); apply latest `eslint-plugin-import`
 - Linting: Check hidden files
