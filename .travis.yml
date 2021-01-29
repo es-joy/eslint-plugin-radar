@@ -4,9 +4,10 @@ language: node_js
 git:
   depth: false
 node_js:
-  - "14"
-  - "12"
-  - "10"
+  - 15
+  - 14
+  - 12
+  - 10
 script:
   - yarn typecheck
   - yarn build
