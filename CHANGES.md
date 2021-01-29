@@ -4,6 +4,7 @@
 
 - Enhancement: add 'meta.docs' (@Loxos)
 - License: Rename file name to reflect license type and add extension
+- Docs: Add `CHANGES.md`
 
 **Dev-focused:**
 
