@@ -1602,8 +1602,10 @@ eslint-plugin-notice@0.9.10:
     lodash "^4.17.15"
     metric-lcs "^0.1.2"
 
-"eslint-plugin-radar@file:.":
-  version "0.1.0"
+eslint-plugin-radar@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-radar/-/eslint-plugin-radar-0.2.0.tgz#88b42ebc4adc71efe94dbae0435ce1acf95da863"
+  integrity sha512-RBNiybDcXvMhW2Yo0AIfgr4Fz6cLiTrqFJXuA5r9MuKOkNXl74zuP79b2+sL5GsgrUxxpDBi3g+9GkAILnC9eQ==
 
 eslint-scope@^5.0.0, eslint-scope@^5.1.1:
   version "5.1.1"

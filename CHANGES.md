@@ -9,6 +9,11 @@
   intended to be tacked on as well:
   <https://github.com/SonarSource/eslint-plugin-sonarjs/issues/190>)
 
+**Dev-focused:**
+
+- npm: Revert back to using fixed rather than self-referential version of
+  `eslint-plugin-radar` for self-linting (was adding to file space)
+
 ## 0.2.0
 
 - Enhancement: add `meta.docs` (@Loxos)
