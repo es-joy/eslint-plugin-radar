@@ -56,10 +56,7 @@ for (const line of lines) {
 }
 
 function addRule(line: string, type: string) {
-  const name = line
-    .substr(2)
-    .split("([")[0]
-    .trim();
+  const name = line.substr(2).split("([")[0].trim();
   const key = "radar/" + line.split("`")[1].trim();
 
   meta.push({

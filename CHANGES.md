@@ -4,9 +4,9 @@
 
 - License: Update license file name to reflect license type is specifically
   LGPL-3.0-only
+- Linting: Apply prettier to MD files and reapply latest to whole project
 - npm: Change `license` to non-deprecated SPDX identifier, `LGPL-3.0-only`
-  (until such time as may hear back on whether "-or-later" may have been
-  intended to be tacked on as well:
+  as per:
   <https://github.com/SonarSource/eslint-plugin-sonarjs/issues/190>)
 
 **Dev-focused:**
@@ -38,11 +38,11 @@
 
 - Optimization: Add "use strict" for CJS eslint files
 - Linting: Apply latest `prettier` (adding `.prettierignore` to avoid applying
-    to test sources); apply latest `eslint-plugin-import`
+  to test sources); apply latest `eslint-plugin-import`
 - Linting: Check hidden files
 - Linting: Check all files by default, ignoring test sources and lib
 - Linting: Create separate ignore file for ruling (which lints nested
-    `node_modules`)
+  `node_modules`)
 - Testing: Ensure test-ci script runs (now that Node 8 is removed)
 - Travis: Bump Node versions to 12 and 14
 - Travis: Avoid comment about "nodejs 6" being cause of failure; the need

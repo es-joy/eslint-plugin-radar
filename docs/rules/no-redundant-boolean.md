@@ -33,4 +33,3 @@ if (booleanMethod()) {
 doSomething(true);
 doSomething(booleanMethod());
 ```
-
