@@ -1,16 +1,16 @@
 # CHANGES for `eslint-plugin-radar`
 
-## ?
+## 0.2.1
 
 - License: Update license file name to reflect license type is specifically
   LGPL-3.0-only
-- Linting: Apply prettier to MD files and reapply latest to whole project
 - npm: Change `license` to non-deprecated SPDX identifier, `LGPL-3.0-only`
   as per:
   <https://github.com/SonarSource/eslint-plugin-sonarjs/issues/190>)
 
 **Dev-focused:**
 
+- Linting: Apply prettier to MD files and reapply latest to whole project
 - npm: Revert back to using fixed rather than self-referential version of
   `eslint-plugin-radar` for self-linting (was adding to file space)
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-radar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Brett Zamir",
   "contributors": [],
   "description": "Radar rules for ESLint",
