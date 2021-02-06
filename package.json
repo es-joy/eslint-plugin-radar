@@ -21,21 +21,10 @@
   "engines": {
     "node": ">=10"
   },
-  "scripts": {
-    "prettier": "prettier --list-different \"{src,tests}/**/*.{js,ts}\"",
-    "eslint": "eslint --ext js,ts .",
-    "lint": "yarn eslint && yarn prettier",
-    "typecheck": "tsc -p tsconfig.json",
-    "precommit": "lint-staged && yarn typecheck",
-    "build": "rimraf lib && tsc -d -p tsconfig-src.json",
-    "prepack": "yarn build",
-    "ruling": "ts-node ruling/index.ts",
-    "jest": "jest",
-    "test": "jest --coverage"
-  },
   "peerDependencies": {
     "eslint": ">= 3.0.0 <= 7.x.x"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/eslint": "7.2.6",
     "@types/estree": "0.0.46",
@@ -99,5 +88,16 @@
       "prettier --write"
     ]
   },
-  "dependencies": {}
+  "scripts": {
+    "prettier": "prettier --list-different \"{src,tests}/**/*.{js,ts}\"",
+    "eslint": "eslint --ext js,ts .",
+    "lint": "yarn eslint && yarn prettier",
+    "typecheck": "tsc -p tsconfig.json",
+    "precommit": "lint-staged && yarn typecheck",
+    "build": "rimraf lib && tsc -d -p tsconfig-src.json",
+    "prepack": "yarn build",
+    "ruling": "ts-node ruling/index.ts",
+    "jest": "jest",
+    "test": "jest --coverage"
+  }
 }
